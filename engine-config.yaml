@@ -1,7 +1,5 @@
-- hosts: all
+- hosts: localhost
   become: true
-  vars:
-    devops_public_key: ""
   tasks:
     - dnf:
         name: "httpd"
